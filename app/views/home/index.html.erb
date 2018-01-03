@@ -1,0 +1,100 @@
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+     <a class="navbar-brand" href="/home/index"> <%=@user.email%></a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+
+
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/home/index">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link disabled" href="/home/aboutus">About Us</a>
+    </div>
+  </div>
+</nav>
+<section class="jumbotron">
+
+<h3>List of Recipes: </h3>
+<ul>
+<%@recipes.each do |recipe|%>
+    <li><a href="/recipe/show/<%=recipe.id%>"><%=recipe.name%></a></li>
+<%end%>
+</ul>
+</section>
+<div style="text-align: center">
+<a href="/recipe/random"> <button class="text-center random btn btn-info">What to Eat ? </button> </a>
+</div>
+</br>
+
+
+<div class="container" style="text-align:center">
+
+      <h1 style="    font-family: 'Pacifico', cursive;" class="my-4 text-center">Photos</h1></h1>
+
+      <div class="row text-center text-lg-left">
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_1.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_2.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_3.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_4.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_5.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_6.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_7.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="/assets/recipe_1.png" alt="">
+          </a>
+        </div>
+
+      </div>
+</div>
+<section class="jumbotron">
+    <h3 class="cursive">Contribute a recipe</h3>
+    
+    <form class="form-group" action="/recipe/create" method="POST">
+        Title: <input class="form-control"name="recipe_name"/>
+        Description: <input class="form-control" name="recipe_description"/>
+        Instructions: <input class="form-control" name="recipe_instructions"/>
+        Ingredients: </br>
+        <%for i in @ingredients%>
+        <%= check_box_tag "ingredients_ids[]", i.id %>
+        <%= i.name %>
+        </br>
+        <%end%>
+        </br>
+        Image: <input type="file" name="pic" accept="image/*">
+        </br>
+        </br>
+        <button  class="btn btn-success cursive" type="submit">Contribute</button>
+    </form>
+</section>

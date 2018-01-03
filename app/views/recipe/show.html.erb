@@ -1,0 +1,43 @@
+
+  <div class="card">
+    <h3 class="card-header cursive"><%=@recipe.name%></h3>
+    </br>
+    <img class="card-img-top" src="/assets/recipe_<%=@recipe.id%>">
+    <div class="card-body">
+      <h4 class="card-title"><%=@recipe.name%></h4>
+      <h5>Description: </h5> <p class="card-text"><%=@recipe.description%></p>
+      <h5>Instructions: </h5> <a class="card-text" href="<%=@recipe.instructions%>">Link</a>
+      </br>
+      </br>
+      <h5>Ingredients: </h5>
+  <ul class="list-group list-group-flush">
+  <%@i.each do |ingredient|%>
+    <a href="/recipe/show_recipes/<%=ingredient.id%>"><li class="list-group-item"><%=ingredient.name%></li></a>
+  <%end%>
+  </ul>
+    </br>
+    <div style="text-align:center">
+      <a href="/recipe/random"> <button class=" random btn btn-primary">What To Eat ?! </button></a> 
+    </div>
+    </div>
+  </div>
+<!--<div class="jumbotron">-->
+<!--  <h3 class="cursive">Contribute a recipe</h3>-->
+  
+<!--  <form class="form-group" action="/recipe/create" method="POST">-->
+<!--      Title: <input class="form-control"name="recipe_name"/>-->
+<!--      Description: <input class="form-control" name="recipe_description"/>-->
+<!--      Instructions: <input class="form-control" name="recipe_instructions"/>-->
+<!--        <%for i in @ingredients%>-->
+<!--        <%= check_box_tag "ingredients_ids[]", i.id %>-->
+<!--        <%= i.name %>-->
+<!--        <%end%>-->
+<!--        </br>-->
+<!--      Image: <input type="file" name="pic" accept="image/*">-->
+<!--      </br>-->
+<!--      </br>-->
+<!--      <button  class="btn btn-success" type="submit">Contribute</button>-->
+<!--  </form>-->
+<!--</div>-->
+
+

@@ -1,0 +1,23 @@
+// Place all the styles related to the recipe controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.card img{
+    width:400px;
+    height: 400px;
+    margin:auto;
+}
+
+h1{
+    margin:auto;
+    width: 400px;
+    font-family: 'Pacifico', cursive
+}
+
+a button {
+    display: block;
+    margin:0 auto !important;
+    width: 400px;
+    font-family: 'Pacifico', cursive
+}
+
+

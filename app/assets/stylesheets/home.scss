@@ -1,0 +1,18 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+    background:
+        url(back.jpg)  no-repeat,
+        url(back1.jpg) 1px 700px repeat;
+}
+
+a button {
+    width: 400px ; 
+    display: block;
+    font-family: 'Pacifico', cursive;
+    margin: 0 auto !important;
+    height: 100px;
+    font-size: 50px !important;
+    text-align: center;
+}

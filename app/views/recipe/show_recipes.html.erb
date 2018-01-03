@@ -1,0 +1,19 @@
+
+  <%@recipes.each do |r|%>
+    <div class="card">
+    <h3 class="card-header cursive"><%=r.name%></h3>
+    </br>
+    <img class="card-img-top" src="/assets/recipe_<%=r.id%>">
+    <div class="card-body">
+      <h4 class="card-title"><%=r.name%></h4>
+      Description: <p class="card-text"><%=r.description%></p>
+      Instructions: <a class="card-text" href="<%=r.instructions%>">Link</a>
+      </br>
+    <ul class="list-group list-group-flush">
+    <%r.ingredients.each do |ingredient|%>
+    <a href="/recipe/show_recipes/<%=ingredient.id%>"><li class="list-group-item"><%=ingredient.name%></li></a>
+  <%end%>
+  </ul>
+    </div>
+  </div>
+  <%end%>
