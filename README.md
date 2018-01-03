@@ -3,10 +3,11 @@
 An Ruby on Rails app that randomizes quick and healthy recipes based off on raw ingredients. 
 
 <h2>Key Features: </h2>
-Randomized food recipes coming from commonly found ingredients such as oats, eggs, and yogurt.
-User can contribute their own recipes to the platform. 
-Comment and rate recipes. 
-
+<ul>
+<li>Randomized food recipes coming from commonly found ingredients such as oats, eggs, and yogurt. </li> 
+  <li>User can contribute their own recipes to the platform.</li> 
+  <li>Comment and rate recipes.</li>
+</ul>
 <h2>Project Timeline:</h2>
 
 Week 7
