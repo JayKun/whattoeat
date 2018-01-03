@@ -10,10 +10,8 @@ An Ruby on Rails app that randomizes quick and healthy recipes based off on raw 
 </ul>
 <h2>Project Timeline:</h2>
 
-Week 7
-Set up user interface front-end
-Week 8
-Implement randomize feature
-Week 9
-Populate database
-
+| Week | Description |
+| --- | --- |
+| Week 7 | Set up user interface front-end |
+| Week 8 | Implement randomize feature |
+| Week 9 | Populate database |
