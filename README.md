@@ -1,24 +1,18 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+<h2>Project Description: </h2>
+An Ruby on Rails app that randomizes quick and healthy recipes based off on raw ingredients. 
 
+<h2>Key Features: <h2>
+Randomized food recipes coming from commonly found ingredients such as oats, eggs, and yogurt.
+User can contribute their own recipes to the platform. 
+Comment and rate recipes. 
 
-Welcome to your Rails project on Cloud9 IDE!
+<h2>Project Timeline:</h2>
 
-To get started, just do the following:
+Week 7
+Set up user interface front-end
+Week 8
+Implement randomize feature
+Week 9
+Populate database
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://HOSTNAME/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
